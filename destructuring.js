@@ -94,7 +94,9 @@ function ingredients(obj){
   Find the smallest number of the three and return that number.
 */
 
-//Code Here
+function largeNumbers({first, second, third}){
+  return Math.min(first, second, third);
+}
 
 
 
@@ -106,6 +108,13 @@ function ingredients(obj){
   Find the longest array and return that array.
 */
 
-//Code Here
+function numberGroups({a,b,c}){
+  if(a.length > b.length && a.length > c.length){
+    return a;
+  } else if(b.length > a.length && b.length > c.length){
+    return b;
+  } else {
+    return c;
+  }
 
-
+}
